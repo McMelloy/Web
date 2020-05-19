@@ -7,6 +7,8 @@
   <meta name="description" content="Welcome to the best damn hotel in Warsaw!">
   <title>Hotel | Welcome</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+  <script src="https://kit.fontawesome.com/5f1d279c4c.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -20,15 +22,49 @@
         </ul>
       </div>
     </nav>
+    
     <div id="showcase">
       <div class="container">
         <div class="showcase-content">
-          <h1>Enjoy You Stay</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur temporibus maiores earum mollitia recusandae nesciunt tempore. Repellendus illum, voluptatibus excepturi et laboriosam autem repellat numquam? Aspernatur harum numquam aliquam magni! Incidunt amet asperiores iste. Consequatur tempora corporis ab alias id!</p>
-          <a href="about.html">About Our Hotel</a>
+          <h1><span class="text-primary">Enjoy</span> You Stay</h1>
+          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur temporibus maiores earum mollitia recusandae nesciunt tempore. Repellendus illum, voluptatibus excepturi et laboriosam autem repellat numquam? Aspernatur harum numquam aliquam magni! Incidunt amet asperiores iste. Consequatur tempora corporis ab alias id!</p>
+          <a class="btn" href="about.html">About Our Hotel</a>
         </div>
       </div>
     </div>
   </header>
+
+  <section id="home-info" class="bg-dark">
+    <div class="info-img"></div>
+    <div class="info-content">
+      <h2><span class="text-primary">The History</span> Of Our Hotel</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cupiditate necessitatibus excepturi esse placeat quasi blanditiis autem totam deleniti temporibus corporis doloremque voluptatibus, provident quos dignissimos nam atque enim, dolores odit similique. Assumenda repellendus similique eaque perspiciatis at pariatur veniam?</p>
+      <a href="about.html" class="btn btn-light">Read More</a>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="box bg-light">
+      <i class="fas fa-hotel fa-3x"></i>
+      <h3>Great Location</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tempora.</p>
+    </div>
+    <div class="box bg-primary">
+      <i class="fas fa-utensils fa-3x"></i>
+      <h3>Free Meals</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tempora.</p>
+    </div>
+    <div class="box bg-light">
+      <i class="fas fa-dumbbell fa-3x"></i>
+      <h3>Fitness Room</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tempora.</p>
+    </div>
+  </section>
+
+  <div class="clr"></div>
+
+  <footer id="main-footer">
+    <p>Hotel BT &copy; 2019, All Rights Reserved</p>
+  </footer>
 </body>
 </html>

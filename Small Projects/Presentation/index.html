@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentation Website</title>
+  <script src="https://kit.fontawesome.com/5f1d279c4c.js" crossorigin="anonymous"></script>
+  <style>
+    :root{
+      --light-color: #f5f5f5;
+      --dark-color: #333;
+      --page-color-1: teal;
+      --page-color-2: indigo;
+      --animate-speed: 1s;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4rem;
+      color: var(--light-color);
+      margin: 0;
+      padding:0;
+      overflow: hidden;
+    }
+
+    div{
+      margin: 20px;
+    }
+
+    .page {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 4rem;
+    }
+
+    .page:nth-child(even) {
+      background-color: var(--page-color-1);
+    }
+
+    .page:nth-child(odd) {
+      background-color: var(--page-color-2);
+    }
+    
+    .page h1{
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 1rem;
+    }
+
+    .page p{
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn{
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: var(--dark-color);
+      background-color: var(--light-color);
+      border: 1px var(--dark-color) solid;
+      transition: all 0.3s ease-in;
+    }
+
+    .btn:hover{
+      background-color: var(--dark-color);
+      border: 1px var(--light-color) solid;
+      color: var(--light-color);
+    }
+
+    /* Page Animation */
+    #page-1 h1 {
+      transform: translateY(-1200px);
+      animation: heading var(--animate-speed) forwards ease-in;
+    }
+
+    #page-1 p {
+      transform: translateX(-1800px);
+      animation: heading var(--animate-speed) forwards ease-in 0.5s;
+    }
+
+    /*Keyframes*/
+    @keyframes heading {
+      to{
+        transform: translateY(0);
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="page-1" class="page">
+    <h1>Welcome To My Presentation</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum cumque dignissimos nobis eius saepe atque ea iure harum nisi ipsum eaque quidem fugit soluta voluptate pariatur, facere vitae amet, obcaecati doloribus totam in. Repellendus distinctio deleniti ut eum illo?</p>
+    <div>
+      <a href="#page-2" class="btn btn-dark"><i class="fas fa-arrow-down"></i> Next Page</a>
+    </div>
+  </section>
+
+  <section id="page-2" class="page">
+    <h1>Page 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum cumque dignissimos nobis eius saepe atque ea iure harum nisi ipsum eaque quidem fugit soluta voluptate pariatur, facere vitae amet, obcaecati doloribus totam in. Repellendus distinctio deleniti ut eum illo?</p>
+    <div>
+      <a href="#page-1" class="btn"><i class="fas fa-arrow-up"></i> Previous Page</a>
+      <a href="#page-3" class="btn btn-dark"><i class="fas fa-arrow-down"></i> Next Page</a>
+    </div>
+  </section>
+
+  <section id="page-3" class="page">
+    <h1>Page 3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum cumque dignissimos nobis eius saepe atque ea iure harum nisi ipsum eaque quidem fugit soluta voluptate pariatur, facere vitae amet, obcaecati doloribus totam in. Repellendus distinctio deleniti ut eum illo?</p>
+    <div>
+      <a href="#page-2" class="btn"><i class="fas fa-arrow-up"></i> Previous Page</a>
+      <a href="#page-4" class="btn btn-dark"><i class="fas fa-arrow-down"></i> Next Page</a>
+    </div>
+  </section>
+
+  <section id="page-4" class="page">
+    <h1>Page 4</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum cumque dignissimos nobis eius saepe atque ea iure harum nisi ipsum eaque quidem fugit soluta voluptate pariatur, facere vitae amet, obcaecati doloribus totam in. Repellendus distinctio deleniti ut eum illo?</p>
+    <div>
+      <a href="#page-3" class="btn"><i class="fas fa-arrow-up"></i> Previous Page</a>
+    </div>
+  </section>
+</body>
+</html>
