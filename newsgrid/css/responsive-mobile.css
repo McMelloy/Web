@@ -1,0 +1,8 @@
+#home-articles .articles-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+#home-articles .articles-container .card {
+  width: 100%;
+}

@@ -1,0 +1,42 @@
+#main-nav .social {
+  display: none;
+}
+
+#main-nav .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#showcase .showcase-content {
+  width: 75%;
+}
+
+#home-articles .articles-container,
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+#home-articles .articles-container img{
+  display: none;
+}
+
+#home-articles .articles-container .card-major,
+#home-articles .articles-container .card-minor,
+#home-articles .articles-container .card-std {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 14px 14px;
+}
+
+.footer-container div:nth-child(even){
+  display:none;
+}
